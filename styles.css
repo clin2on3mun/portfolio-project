@@ -5,6 +5,17 @@
   padding: 0;
 }
 
+@font-face {
+  font-family: 'InaiMathi';
+  src:
+    url('fonts/InaiMathi.ttf.woff') format('woff'),
+    url('fonts/InaiMathi.ttf.svg#InaiMathi') format('svg'),
+    url('fonts/InaiMathi.ttf.eot'),
+    url('fonts/InaiMathi.ttf.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .header {
   background-color: #3c3a39;
 }
@@ -26,6 +37,7 @@
   padding: 8px;
   height: 48px;
   align-items: center;
+  list-style-type: none;
 }
 
 .menu a {
@@ -81,10 +93,260 @@
   justify-content: space-between;
 }
 
-.links {
+.social {
+  display: inline;
+}
+
+.headline2 {
+  min-height: calc(100vh - 90px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.btn {
+  font-family: 'Inter', sans-serif;
+  height: 40px;
+  font-size: 15px;
+  padding: 8px;
+  background: white;
+  border: 1px solid #8993a4;
+}
+
+.color {
+  background: #ff6b00;
+  color: #fff;
+  border: 1px solid #ff6b00;
+}
+
+.container1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+hr {
+  width: 327px;
+  height: 0;
+  border: 1px solid #212121;
+  margin-bottom: 4rem;
+}
+
+.title {
+  font-family: 'Crete Round', serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+
+.flex h1 {
+  margin-bottom: 1.5rem;
+}
+
+.post1 {
+  font-family: 'Crete Round', serif;
+  font-weight: 400;
+  font-size: 32px;
+}
+
+.text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.lesson {
+  display: flex;
+  margin: 0;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.contents {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.post {
+  background-image: url("images/back2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 10px;
+}
+
+.post-title {
+  margin-top: 50px;
+}
+
+.post-title h1 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 800;
+  margin: 10px;
+}
+
+.post-content {
+  color: #fff;
+  line-height: 1.5rem;
+  font-size: 1.5rem;
+  word-spacing: 0.5rem;
+  margin: 8px;
+}
+
+.btn-courses button {
+  font-family: 'Inter', sans-serif;
+  height: 40px;
+  font-size: 15px;
+  padding: 8px;
+  background-color: rgba(131, 130, 130, 0.5);
+  color: #fff;
+  margin-left: 8px;
+  border: none;
+}
+
+.btn-allProjects button {
+  font-family: 'Inter', sans-serif;
+  background-color: rgb(239, 84, 27);
+  color: #fff;
+  padding: 15px;
+  border: none;
+  margin-top: 8px;
+  width: 100%;
+  font-weight: 700;
+  font-size: 17px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 327px;
+  justify-content: center;
+  align-items: space-around;
+}
+
+.about {
+  margin-top: 200px;
+  background: #1c1a19;
+  min-height: calc(100vh - 90px);
+  background-image: url('images/Frame.png');
+  background-repeat: no-repeat;
+  background-size: 7rem;
+  background-position: right 300px;
+}
+
+.about-content {
+  margin-left: 30px;
+  padding-top: 100px;
+}
+
+.about-title {
+  color: #ff6b00;
+  font-family: 'Crete Round', serif;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 88px;
+}
+
+.about-description {
+  margin-top: 30px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+  line-height: 24px;
+}
+
+.button {
+  margin-top: 30px;
+}
+
+.project-exp {
+  background: #1c1a19;
+}
+
+.about hr {
+  background: #fff;
+  margin-top: 100px;
+  height: 2px;
+  width: 327px;
+}
+
+ul {
+  color: #fff;
   list-style-type: none;
 }
 
-li {
-  display: inline;
+.experience {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.exp1 {
+  font-family: 'InaiMathi', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  list-style-type: none;
+}
+
+.diamond {
+  background: #ff6b00;
+  width: 10px;
+  height: 10px;
+  transform: rotate(45deg);
+  border: 1px solid #ff6b00;
+  align-self: center;
+}
+
+.shape {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.square {
+  background: #ff6b00;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #ff6b00;
+  align-self: center;
+}
+
+.dot {
+  background: #ff6b00;
+  width: 10px;
+  height: 10px;
+  transform: rotate(45deg);
+  border: 1px solid #ff6b00;
+  align-self: center;
+  border-radius: 100%;
+}
+
+.work {
+  font-size: 22px;
+  line-height: 43px;
+  text-align: center;
+}
+
+.exp2 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.function:hover {
+  background: #1c1a19;
+  color: #fff;
 }
