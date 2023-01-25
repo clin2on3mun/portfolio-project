@@ -46,13 +46,13 @@
 
 .headlines {
   background: #1c1a19;
-  min-height: calc(100vh - 90px);
   display: flex;
   align-items: center;
   background-image: url('images/back.png');
   background-repeat: no-repeat;
   background-size: 7rem;
   background-position: right 20rem;
+  padding: 150px 0;
 }
 
 .container {
@@ -91,10 +91,6 @@
   width: 50%;
   display: flex;
   justify-content: space-between;
-}
-
-.social {
-  display: inline;
 }
 
 .headline2 {
@@ -291,6 +287,7 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  padding-bottom: 2em;
 }
 
 .exp1 {
@@ -349,4 +346,98 @@ ul {
 .function:hover {
   background: #1c1a19;
   color: #fff;
+}
+
+.contact-form {
+  background-color: #fff;
+  margin: 0;
+}
+
+.container3 {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-bottom: 120px;
+}
+
+form {
+  padding: 2rem 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form li + li {
+  margin-top: 1em;
+}
+
+input {
+  padding: 0 10px;
+  width: 327px;
+  height: 48px;
+  border-style: none;
+  border-bottom: 2px solid #dbd8d7;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #979493;
+}
+
+textarea {
+  width: 327px;
+  height: 114px;
+  padding: 0 10px;
+  border-style: none;
+  background-color: #fbf8f7;
+  color: #3c3a39;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.btn-center {
+  margin: 1px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.title2 {
+  font-family: 'inter', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  color: #172b4d;
+  padding: 8rem 0 0;
+}
+
+.footer {
+  height: 80px;
+  background: #fff;
+  border-top: 1px solid #dfe1e6;
+  padding-top: 20px;
+}
+
+.footer-links {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+}
+
+.footer hr {
+  width: 134px;
+  height: 5px;
+  background-color: #0d151e;
+  margin: 3px auto;
+  border-radius: 1px;
+}
+
+.footer-hr {
+  padding-top: 12px;
 }
