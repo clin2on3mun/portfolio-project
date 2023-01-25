@@ -46,13 +46,14 @@
 
 .headlines {
   background: #1c1a19;
-  min-height: calc(100vh - 90px);
+  /* min-height: calc(100vh - 90px); */
   display: flex;
   align-items: center;
   background-image: url('images/back.png');
   background-repeat: no-repeat;
   background-size: 7rem;
   background-position: right 20rem;
+  padding: 150px 0px;
 }
 
 .container {
@@ -425,8 +426,10 @@ textarea{
   
 }
 .footer{
-  height:345px;
+  height:80px;
   background: #fff;
+  border-top: 1px solid #000;
+  padding-top: 20px;
 }
 
 
