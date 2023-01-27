@@ -6,6 +6,15 @@
 }
 
 @media only screen and (max-width: 767px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  body {
+    position: relative;
+  }
+
   @font-face {
     font-family: 'InaiMathi';
     src:
@@ -62,6 +71,7 @@
     background-size: 7rem;
     background-position: right 24rem;
     padding: 150px 0;
+    width: 100vw;
   }
 
   .container {
@@ -111,6 +121,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 100vw;
   }
 
   .btn {
@@ -269,6 +280,7 @@
     background-repeat: no-repeat;
     background-size: 7rem;
     background-position: right 300px;
+    width: 100vw;
   }
 
   .about-content {
@@ -326,18 +338,10 @@
     padding-bottom: 2em;
   }
 
-  .exp1 {
-    font-family: 'InaiMathi', sans-serif;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 44px;
-    list-style-type: none;
-  }
-
   .diamond {
     background: #ff6b00;
-    width: 10px;
-    height: 10px;
+    width: 12px;
+    height: 12px;
     transform: rotate(45deg);
     border: 1px solid #ff6b00;
     align-self: center;
@@ -351,16 +355,16 @@
 
   .square {
     background: #ff6b00;
-    width: 10px;
-    height: 10px;
+    width: 12px;
+    height: 12px;
     border: 1px solid #ff6b00;
     align-self: center;
   }
 
   .dot {
     background: #ff6b00;
-    width: 10px;
-    height: 10px;
+    width: 12px;
+    height: 12px;
     transform: rotate(45deg);
     border: 1px solid #ff6b00;
     align-self: center;
@@ -368,12 +372,15 @@
   }
 
   .work {
+    font-family: 'inter', sans-serif;
+    font-weight: 400;
     font-size: 22px;
-    line-height: 43px;
+    line-height: 42.67px;
     text-align: center;
   }
 
   .exp2 {
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 32px;
     line-height: 44px;
@@ -926,30 +933,24 @@
     display: grid;
     grid-template-columns: 320px 320px 320px;
     grid-column-gap: 120px;
+    justify-content: center;
     margin-top: 100px;
-    margin-left: 100px;
+    margin-left: 150px;
   }
 
   .experience {
     display: flex;
+    align-items: center;
   }
 
   .line2 hr {
     display: none;
   }
 
-  .exp1 {
-    font-family: 'InaiMathi', sans-serif;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 44px;
-    list-style-type: none;
-  }
-
   .diamond {
     background: #ff6b00;
-    width: 10px;
-    height: 10px;
+    width: 14px;
+    height: 14px;
     transform: rotate(45deg);
     border: 1px solid #ff6b00;
     align-self: center;
@@ -962,16 +963,16 @@
 
   .square {
     background: #ff6b00;
-    width: 10px;
-    height: 10px;
+    width: 14px;
+    height: 14px;
     border: 1px solid #ff6b00;
     align-self: center;
   }
 
   .dot {
     background: #ff6b00;
-    width: 10px;
-    height: 10px;
+    width: 14px;
+    height: 14px;
     transform: rotate(45deg);
     border: 1px solid #ff6b00;
     align-self: center;
@@ -979,11 +980,14 @@
   }
 
   .work {
+    font-family: 'inter', sans-serif;
+    font-weight: 400;
     font-size: 22px;
-    line-height: 43px;
+    line-height: 42.67px;
   }
 
   .exp2 {
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 32px;
     line-height: 42.67px;
