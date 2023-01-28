@@ -916,13 +916,14 @@
     margin-top: 30px;
     width: 161px;
     height: 48px;
-    transition: width 1s, ease-out;
+    
   }
 
   .button:hover {
     width: 300px;
     background-color: #fff;
     color: black;
+    transition: width 1s ease-out;
   }
 
   .project-exp {
