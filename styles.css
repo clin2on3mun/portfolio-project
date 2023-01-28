@@ -917,7 +917,11 @@
     height: 48px;
     transition: width 1s, ease-out
   }
- 
+  .button:hover{
+    width: 300px;
+    background-color:#fff;
+    color:black;
+  }
 
   .project-exp {
     background: #1c1a19;
