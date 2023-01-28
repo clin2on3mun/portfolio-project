@@ -771,9 +771,10 @@
   .post12 .btn-courses {
     display: none;
   }
-  @keyframes buttonChangeColor{
-    from{background:#ff6b00;}
-    to{background: #0d151e;}
+
+  @keyframes buttonChangeColor {
+    from { background: #ff6b00; }
+    to { background: #0d151e; }
   }
 
   .post12 button {
@@ -787,8 +788,8 @@
     font-weight: 700;
     font-size: 17px;
     display: block;
-    animation-name:buttonChangeColor;
-    animation-duration:1s;
+    animation-name: buttonChangeColor;
+    animation-duration: 1s;
     animation-iteration-count: infinite;
   }
 
@@ -915,12 +916,13 @@
     margin-top: 30px;
     width: 161px;
     height: 48px;
-    transition: width 1s, ease-out
+    transition: width 1s, ease-out;
   }
-  .button:hover{
+
+  .button:hover {
     width: 300px;
-    background-color:#fff;
-    color:black;
+    background-color: #fff;
+    color: black;
   }
 
   .project-exp {
