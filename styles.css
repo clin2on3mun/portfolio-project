@@ -671,12 +671,13 @@
   }
 
   .color {
-    width: 124px;
-    font-weight: 800;
+    width: 128px;
+    font-weight: 900;
     font-size: 17px;
     line-height: 24px;
     height: 48px;
-    background: #ff6b00;
+    letter-spacing: 3%;
+    background: #ff6b11;
     color: #fff;
     border: 1px solid #ff6b00;
   }
