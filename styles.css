@@ -680,6 +680,9 @@
     color: #fff;
     border: 1px solid #ff6b00;
   }
+  .color:hover{
+    cursor:pointer;
+  }
 
   .title-line {
     width: 794px;
@@ -742,6 +745,7 @@
     margin: 0;
     flex-wrap: wrap;
     gap: 12px;
+  
   }
 
   .contents {
@@ -797,6 +801,7 @@
     color: #fff;
     padding: 15px;
     border: none;
+    cursor:pointer;
     margin-top: 385px;
     width: 100%;
     font-weight: 700;
@@ -938,6 +943,7 @@
     background-color: #fff;
     color: black;
     transition: width 1s ease-out;
+    cursor:pointer;
   }
 
   .project-exp {
@@ -956,12 +962,12 @@
   }
 
   .exp {
-    display: grid;
-    grid-template-columns: 320px 320px 320px;
-    grid-column-gap: 120px;
-    justify-content: center;
-    margin-top: 100px;
-    margin-left: 150px;
+   display:flex;
+   gap:240px;
+   justify-content: center;
+   flex-wrap:wrap;
+   margin-top: 120px;
+   margin-left: 150px;
   }
 
   .experience {
@@ -1022,6 +1028,7 @@
   .function:hover {
     background: #1c1a19;
     color: #fff;
+    cursor:pointer
   }
 
   .contact-form {
