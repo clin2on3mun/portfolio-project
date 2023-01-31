@@ -321,9 +321,9 @@
     margin-left: 10px;
   }
 
-  ul {
+  dl {
     color: #fff;
-    list-style-type: none;
+    
   }
 
   .line hr {
@@ -394,6 +394,10 @@
   .contact-form {
     background-color: #fff;
     margin: 0;
+    list-style-type:none;
+  }
+  ul{
+    list-style-type: none;
   }
 
   .container3 {
@@ -565,6 +569,7 @@
 
   .desktop-navs li:hover a {
     color: orange;
+    text-decoration:underline;
   }
 
   .headlines {
@@ -945,9 +950,8 @@
     margin-left: 60px;
   }
 
-  ul {
+  dl {
     color: #fff;
-    list-style-type: none;
   }
 
   .exp {
@@ -1037,7 +1041,9 @@
     align-items: center;
     justify-content: center;
   }
-
+ul{
+  list-style-type: none;
+}
   form li + li {
     margin-top: 1em;
   }
