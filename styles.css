@@ -672,7 +672,7 @@
 
   .color {
     width: 124px;
-    font-weight: 700;
+    font-weight: 800;
     font-size: 17px;
     line-height: 24px;
     height: 48px;
@@ -800,7 +800,7 @@
     margin-top: 385px;
     width: 100%;
     font-weight: 700;
-    font-size: 17px;
+    font-size: 19px;
     display: block;
     animation-name: buttonChangeColor;
     animation-duration: 1s;
@@ -822,7 +822,7 @@
     height: 81px;
     color: #fff;
     font-size: 32px;
-    font-weight: 400;
+    font-weight: 550;
     line-height: 44px;
     margin: 10px;
   }
@@ -838,7 +838,7 @@
   .post-content {
     color: #fff;
     font-family: 'inter', sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 17px;
     margin: 10px 0 15px 20px;
   }
@@ -930,6 +930,8 @@
     margin-top: 30px;
     width: 161px;
     height: 48px;
+    font-weight:800;
+
   }
 
   .button:hover {
