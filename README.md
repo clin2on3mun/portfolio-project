@@ -42,6 +42,7 @@ After you're finished please remove all the comments and instructions!
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+    -[Walk Through](#walk-through)
   - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
@@ -64,7 +65,7 @@ After you're finished please remove all the comments and instructions!
 
 > Describe your project in 1 or 2 sentences.
 
-**[Portfolio:setup and mobile first]** is a more advance HTML and CSS using semantics and styling with flex-box 
+**[Portfolio:setup and mobile first]** is a more advance HTML and CSS using semantics and styling with flex-box and grid layout
 
 ## 🛠 Built With <a name="built-with">HTML and CSS</a>
 
@@ -104,8 +105,13 @@ After you're finished please remove all the comments and instructions!
 - **[Googlefont and icons]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+<!-- WALK THROUGH -->
 
+## 🚀 Live Demo <a name="walk-through"></a>
+> Add a link to your deployed project.
+- [Walk Through Link](https://www.loom.com/share/356333d54b294d90b91afeec420a076c)
 <!-- LIVE DEMO -->
+
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
