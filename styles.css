@@ -321,9 +321,8 @@
     margin-left: 10px;
   }
 
-  ul {
+  dl {
     color: #fff;
-    list-style-type: none;
   }
 
   .line hr {
@@ -394,6 +393,11 @@
   .contact-form {
     background-color: #fff;
     margin: 0;
+    list-style-type: none;
+  }
+
+  ul {
+    list-style-type: none;
   }
 
   .container3 {
@@ -565,6 +569,7 @@
 
   .desktop-navs li:hover a {
     color: orange;
+    text-decoration: underline;
   }
 
   .headlines {
@@ -603,8 +608,8 @@
 
   .supportText {
     font-family: 'inter', sans-serif;
-    font-weight: 500;
-    font-size: 24px;
+    font-weight: 600;
+    font-size: 25px;
     line-height: 44px;
     color: #fff;
     width: 366px;
@@ -613,7 +618,7 @@
 
   .description {
     font-family: 'inter', sans-serif;
-    font-weight: 400;
+    font-weight: 550;
     font-size: 20px;
     line-height: 32px;
     color: #f4f5f7;
@@ -666,14 +671,21 @@
   }
 
   .color {
-    width: 124px;
-    font-weight: 700;
+    width: 128px;
+    font-weight: 900;
     font-size: 17px;
     line-height: 24px;
     height: 48px;
-    background: #ff6b00;
+    letter-spacing: 3%;
+    background: #ff6b11;
     color: #fff;
     border: 1px solid #ff6b00;
+  }
+
+  .color:hover {
+    cursor: pointer;
+    font-size: 900;
+    background-color: #172b4d;
   }
 
   .title-line {
@@ -792,10 +804,11 @@
     color: #fff;
     padding: 15px;
     border: none;
+    cursor: pointer;
     margin-top: 385px;
     width: 100%;
     font-weight: 700;
-    font-size: 17px;
+    font-size: 19px;
     display: block;
     animation-name: buttonChangeColor;
     animation-duration: 1s;
@@ -817,7 +830,7 @@
     height: 81px;
     color: #fff;
     font-size: 32px;
-    font-weight: 400;
+    font-weight: 550;
     line-height: 44px;
     margin: 10px;
   }
@@ -833,7 +846,7 @@
   .post-content {
     color: #fff;
     font-family: 'inter', sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 17px;
     margin: 10px 0 15px 20px;
   }
@@ -925,6 +938,7 @@
     margin-top: 30px;
     width: 161px;
     height: 48px;
+    font-weight: 800;
   }
 
   .button:hover {
@@ -932,6 +946,7 @@
     background-color: #fff;
     color: black;
     transition: width 1s ease-out;
+    cursor: pointer;
   }
 
   .project-exp {
@@ -945,17 +960,16 @@
     margin-left: 60px;
   }
 
-  ul {
+  dl {
     color: #fff;
-    list-style-type: none;
   }
 
   .exp {
-    display: grid;
-    grid-template-columns: 320px 320px 320px;
-    grid-column-gap: 120px;
+    display: flex;
+    gap: 240px;
     justify-content: center;
-    margin-top: 100px;
+    flex-wrap: wrap;
+    margin-top: 120px;
     margin-left: 150px;
   }
 
@@ -1017,6 +1031,7 @@
   .function:hover {
     background: #1c1a19;
     color: #fff;
+    cursor: pointer;
   }
 
   .contact-form {
@@ -1036,6 +1051,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  ul {
+    list-style-type: none;
   }
 
   form li + li {
