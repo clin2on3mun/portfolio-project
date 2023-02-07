@@ -12,7 +12,7 @@ const about = document.querySelector('.about-content-menu');
 const contact = document.querySelector('.contact-menu');
 
 function toggle() {
-  menuBar.style.display = 'block';
+  menuContent.style.display = 'block';
 }
 function close() {
   menuContent.style.display = 'none';
