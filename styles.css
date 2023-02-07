@@ -80,16 +80,21 @@
     list-style-type: none; 
     cursor:pointer;
   }
+
   .menu-item {
     font-family:"inter", sans-serif;
     font-weight:700;
     font-size:32px;
     line-height:44px;
     padding:12px 0 5px 12px;
-    
+    transition: 0.2s ease-in-out;
     border-bottom:1px solid #6F6C6B;
     color:#FFF5E1;
 
+  }
+  
+  .menu-item:hover {
+    color: #ff6b00; 
   }
 
   .menu a {
