@@ -109,7 +109,7 @@ function openPop(arg){
    linkButtons.innerHTML=`<div class="btnbutton"><a href=${result.see_live} class="see-live">See live</a><img src="images/icon.png"></div>`
    linkButtons.innerHTML+=`<div class="btnbutton"><a href=${result.see_source} class="see-source">See Source</a><img src="images/group.png"></div> `
    
-      }
+}
 
 
 

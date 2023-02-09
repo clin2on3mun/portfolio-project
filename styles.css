@@ -1085,8 +1085,8 @@
 .pop-body{
   margin-top:2rem;
 
-  flex-direction: column;
-  justify-content:space-around;
+  /* flex-direction: column; */
+ 
   gap:12px;
     
 }
@@ -1095,19 +1095,32 @@
   font-weight:400;
   font-size:16px;
   line-height:24px;
+  width:40%;
+  height:30%;
+  
 }
 .body-cont{
- 
+  display: flex;
   justify-content:center;
   gap:15px;
 }
+.newDiv{
+  display: flex;
+  flex-wrap: wrap;
+}
+.feature_image {
+  width: 50% !important;
+  height: auto;
+  /* float: left; */
+}
 .button-comp{
+  float:right;
   display:flex;
   gap:20px;
   align-items:center;
+  justify-content:flex-end;
   
 }
-.button
 .btnbutton {
 
  display: flex;
@@ -1144,9 +1157,9 @@
    pointer-events: all;
 
 }
-.feature_image{
+/* .feature_image{
   height:50%;
-}
+} */
 
   .about {
     margin-top: 200px;
