@@ -160,7 +160,7 @@
 				<button type="button" class="btn function size1">html</button>
 				<button type="button" class="btn function size">bootstrap</button>
 				<button type="button" class="btn function size2">Ruby</button>
-				<button type="button" class="btn color">See Project</button>
+				<button data-modal-target="#modal"  type="button" class="btn color"onclick="openPop(0)">See Project</button>
 
 			</div>
 		</div>
@@ -186,7 +186,7 @@
 
 			</div>
 			<div class="btn-allProjects">
-				<button type="button">See Project</button>
+				<button data-modal-target="#modal" type="button" onclick="openPop(1)" >See Project</button>
 			</div>
 		</div>
         <div class="post12">
@@ -211,7 +211,7 @@
 
 			</div>
 			<div class="btn-allProjects button2">
-				<button type="button">See Project</button>
+				<button data-modal-target="#modal"  type="button" onclick="openPop(1)">See Project</button>
 			</div>
 		</div>
 
@@ -233,7 +233,7 @@
 
 			</div>
 			<div class="btn-allProjects button2">
-				<button type="button">See Project</button>
+				<button type="button" data-modal-target="#modal" onclick="open(1)">See Project</button>
 			</div>
 		</div>
 
@@ -255,7 +255,7 @@
 
 			</div>
 			<div class="btn-allProjects button2">
-				<button type="button">See Project</button>
+				<button type="button" data-modal-target="#modal" >See Project</button>
 			</div>
 		</div>
 		<div class="post post5">
@@ -275,7 +275,7 @@
 
 			</div>
 			<div class="btn-allProjects button2">
-				<button type="button">See Project</button>
+				<button type="button" data-modal-target="#modal" >See Project</button>
 			</div>
 		</div>
 		<div class="post post6">
@@ -296,14 +296,36 @@
 
 			</div>
 			<div class="btn-allProjects button2">
-				<button type="button">See Project</button>
+				<button data-modal-target="#modal" type="button">See Project</button>
 			</div>
 		</div>
 
 
 
 	</section>
-</div>
+    <div class="modal">
+	 <div class="pop" id="modal"> 
+		 <div class="pop-header">
+			<p class="title-1"></p>
+			 <button data-close-button type="button"class="close-button"></button>   
+		</div>
+		<div class="pop-body">
+			<div class=buto></div>
+			<div class="body-cont">
+			<img class="feature_image" src="" id="image"> 
+			<p class="paragraph"></p> </div>
+	
+			<div class="buttonLinks button-comp">
+				    
+			</div>    
+			
+		</div> 
+		</div>   
+	
+		<div id="overlay"></div>
+	</div>
+	</div>
+	
 	 <section class="about" id="about">
 		<div class="about-content">
 			<h1 class="about-title">About me</h1>
@@ -406,6 +428,7 @@
 				<hr>
 			</div>
 		</footer>  
+		
 		
 		
 
