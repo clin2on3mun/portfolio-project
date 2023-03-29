@@ -1,71 +1,166 @@
-
+window.onload=function(){
 const menuBar = document.querySelector('.bar');
 const menuContent = document.querySelector('.menu-content');
 const closeMenu = document.querySelector('.close-img');
 const portfolio = document.querySelector('.portfolio-menu');
 const about = document.querySelector('.about-content-menu');
 const contact = document.querySelector('.contact-menu');
-const openModalButtons=document.querySelectorAll('[data-modal-target]');
-const closeModalButtons=document.querySelectorAll('[data-close-button]');
-const overLay=document.getElementById('overlay');
-let modaldiv=document.querySelector('.title-1');
-let feature=document.querySelector('.feature_image')
-// let seeLive=document.querySelector('.see-live')
-// let seeSource=document.querySelector('see-source');
-let modalBody=document.querySelector('.pop-body')
-let buttons=document.querySelector('.buto')
-let paragraph=document.querySelector('.paragraph')
-let closeButton=document.querySelector('.close-button')
-let linkButtons=document.querySelector('.button-comp')
+const openModalButtons = document.querySelectorAll('[data-modal-target]');
+const closeModalButtons = document.querySelectorAll('[data-close-button]');
+const overlay = document.getElementById('overlay');
+const card = document.querySelector('.card');
 
-openModalButtons.forEach(button =>{
-   button.addEventListener('click',()=>{
-      const modal=document.querySelector(button.dataset.modalTarget);
-      openModal(modal)
-   }) 
-})
-closeModalButtons.forEach(button =>{
-   button.addEventListener('click',()=>{
-      const modal= button.closest('.pop')
-      closeModal(modal)
-   }) 
-})
-
-function openModal(modal){
-   if(modal == null) return 
-   modal.classList.add('active');
-   overlay.classList.add('active');
-   
-   }
-
-function closeModal(modal){
-  if(modal == null) return 
-  modal.classList.remove('active')
-  overlay.classList.remove('active')
+function openModal(modal) {
+  if (modal == null) return;
+  modal.classList.add('active');
+  overlay.classList.add('active');
 }
-let arrayOfObject=[
-  {
-      name:'Multi Post Stories',
-      close_button:'&times',
-      feature_image:'images/feature_image.png',
-      list_of_technologies:['html','Bootstrap','Ruby on rails'],
-      description:`Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-      when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-      It has survived not only five centuries,but also the leap into electronic typesetting, remaining essent`,        
-      see_live:'https://clin2on3mun.github.io/',
-      see_source:'https://github.com/clin2on3mun/portfolio-project'   
-   },
-   {
-      name: 'Profesional Art Printing Data',
-      close_button:'&times',
-      feature_image:'images/feature_image.png',
-      list_of_technologies:['html','Bootstrap','Ruby on rails'],
-      description:`A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard`,
-      see_live:'https://clin2on3mun.github.io/',
-      see_source:'https://github.com/clin2on3mun/portfolio-project'
 
-   }]
+openModalButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    const modal = document.querySelector(button.dataset.modalTarget);
+    openModal(modal);
+  });
+});
+function closeModal(modal) {
+  if (modal == null) return;
+  modal.classList.remove('active');
+  overlay.classList.remove('active');
+}
+closeModalButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    const modal = button.closest('.pop');
+    closeModal(modal);
+  });
+});
+
+const arrayOfObject = [
+
+  {
+    id: 1,
+    name1: 'Profesional Art',
+    name2: 'Printing Data',
+    close_button: '&times',
+    feature_image: 'images/feature_image.png',
+    listOfTechnologies: ['html', 'Css', 'Ruby'],
+    cardDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+    seeLive: 'https://clin2on3mun.github.io/',
+    seeSource: 'https://github.com/clin2on3mun/portfolio-project',
+    seeProject: 'see project',
+  },
+  {
+    id: 2,
+    name1: 'Profesional Art',
+    name2: 'Printing Data',
+    close_button: '&times',
+    feature_image: 'images/feature_image.png',
+    listOfTechnologies: ['html', 'Css', 'Ruby'],
+    cardDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+    seeLive: 'https://clin2on3mun.github.io/',
+    seeSource: 'https://github.com/clin2on3mun/portfolio-project',
+    seeProject: 'see project',
+  },
+  {
+    id: 3,
+    name1: 'Profesional Art',
+    name2: 'Printing Data',
+    closeButton: '&times',
+    feature_image: 'images/feature_image.png',
+    listOfTechnologies: ['html', 'Css', 'Ruby'],
+    cardDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+    seeLive: 'https://clin2on3mun.github.io/',
+    seeSource: 'https://github.com/clin2on3mun/portfolio-project',
+    seeProject: 'see project',
+  },
+  {
+    id: 4,
+    name1: 'Profesional Art',
+    name2: 'Printing Data',
+    closeButton: '&times',
+    feature_image: 'images/feature_image.png',
+    listOfTechnologies: ['html', 'Css', 'Ruby'],
+    cardDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+    seeLive: 'https://clin2on3mun.github.io/',
+    seeSource: 'https://github.com/clin2on3mun/portfolio-project',
+    seeProject: 'see project',
+  },
+  {
+    id: 5,
+    name1: 'Profesional Art',
+    name2: 'Printing Data',
+    closeButton: '&times',
+    feature_image: 'images/feature_image.png',
+    listOfTechnologies: ['html', 'Css', 'Ruby'],
+    cardDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+    seeLive: 'https://clin2on3mun.github.io/',
+    seeSource: 'https://github.com/clin2on3mun/portfolio-project',
+    seeProject: 'see project',
+  },
+  {
+    id: 6,
+    name1: 'Profesional Art',
+    name2: 'Printing Data',
+    close_button: '&times',
+    feature_image: 'images/feature_image.png',
+    listOfTechnologies: ['html', 'Css', 'Ruby'],
+    cardDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+    seeLive: 'https://clin2on3mun.github.io/',
+    seeSource: 'https://github.com/clin2on3mun/portfolio-project',
+    seeProject: 'see project',
+  },
+
+];
+function renderCards() {
+  card.innerHTML = arrayOfObject.map((x) => {
+    const {
+      name1, name2, cardDescription, listOfTechnologies, seeProject,
+    } = x;
+    return `<div class="post post11">
+<div class="post-title">
+   <h1>${name1}</h1>
+   <h1>${name2}</h1>
+</div>
+<div class="post-content">
+   <p>${cardDescription}</p>
+</div>
+<div class="btn-courses ">
+   <button type="button" class="function">${listOfTechnologies[0]}</button>
+   <button type="button" class="function">${listOfTechnologies[1]}</button>
+   <button type="button" class="function">${listOfTechnologies[2]}</button>
+
+</div>
+<div class="btn-allProjects">
+   <button data-modal-target="#modal" type="button">${seeProject}</button>
+</div>
+</div>
+<div class="modal">
+<div class="pop" id="modal"> 
+  <div class="pop-header">
+    <p class="title-1"></p>
+    <button data-close-button type="button"class="close-button"></button>   
+  </div>
+  <div class="pop-body">
+    <div class=buto></div>
+    <div class="newDiv">
+      <img class="feature_image" src="image/feature_image.png" id="image"> 
+      <div class="modal-text-buttons">
+                    <p class="paragraph"></p> 
+          <div class="buttonLinks button-comp"></div>  
+                </div>
+    </div>  
+    
+</div> 
+</div>   
+
+  <div id="overlay"></div>
+</div>
+</div> 
+
+`;
+  }).join('');
+}
+
+renderCards();
 
 function toggle() {
   menuContent.style.display = 'block';
@@ -83,9 +178,6 @@ function aboutContent() {
   menuContent.style.display = 'none';
 }
 
-
-
-
 menuBar.addEventListener('click', toggle);
 closeMenu.addEventListener('click', close);
 portfolio.addEventListener('click', portfolioContent);
@@ -93,30 +185,4 @@ about.addEventListener('click', aboutContent);
 contact.addEventListener('click', contactContent);
 
 
-
-
-function openPop(arg){
-   let result=arrayOfObject[arg];
-   modaldiv.innerHTML=result.name;
-   closeButton.innerHTML=result.close_button;
-   buttons.innerHTML="";
-   for(let i=0; i<result.list_of_technologies.length;i++){
-      buttons.innerHTML+='<button class="buttons-top btn">'+result.list_of_technologies[i]+ '</button>';
-   }
-   
-   document.querySelector('#image').src = result.feature_image;
-   paragraph.innerHTML=result.description;
-   linkButtons.innerHTML=`<div class="btnbutton"><a href=${result.see_live} class="see-live">See live</a><img src="images/icon.png"></div>`
-   linkButtons.innerHTML+=`<div class="btnbutton"><a href=${result.see_source} class="see-source">See Source</a><img src="images/group.png"></div> `
-   
 }
-
-
-
-
-      
-      
-   
-      
-
-
